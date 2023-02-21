@@ -19,7 +19,7 @@ public class ScannerQuiz {
 		
 		Scanner sc = new Scanner (System.in);
 		
-		System.out.print("이름을 입력하세요: ");
+		System.out.print("이름을 입력하세요: ");		
 		String name = sc.next();
 		
 		System.out.print("나이를 입력하세요: ");
@@ -33,14 +33,8 @@ public class ScannerQuiz {
 		
 		System.out.printf("이름: %s\n나이: %d세\n출생년도: %d년", name, age, year);
 		
-		
-		
-		
-	
-		
-		
-		
-		
+
+		sc.close();
 		
 		
 		
