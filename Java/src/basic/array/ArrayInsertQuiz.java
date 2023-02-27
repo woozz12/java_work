@@ -18,7 +18,8 @@ public class ArrayInsertQuiz {
 
         3. 입력이 종료되면 사용자가 입력한 음식을
         가로로 출력해 주세요. (null은 출력하지 마세요.)
-
+		
+		
         */
 		
 		String[] foods = new String[50];
@@ -35,7 +36,19 @@ public class ArrayInsertQuiz {
 				System.out.println("종료: ");
 				break;
 			}
-			foods[i] = name;
+			
+			int  j;
+			for(j=0; j<foods.length;j++) {
+				if(name.equals(foods[j])) {
+					System.out.println("이미 존재하는 음식");
+					i--;
+					break;
+				}
+			}
+			if(j == foods.length) {
+				
+				foods[i] = name;
+			}
 		}
 		System.out.println("---------------------");
 		System.out.println("내가 먹고 싶은 음식들: ");
@@ -44,6 +57,10 @@ public class ArrayInsertQuiz {
 			if(f == null) break;
 			System.out.println(f + " ");
 		}
+		
+		
+		
+		
 		
 		sc.close();
 		

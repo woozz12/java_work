@@ -47,7 +47,7 @@ public class EnhancedForLoop {
 		double avg = (double)total/scores.length;
 		
 		System.out.printf("총점:%d, 평균:%.2f\n",total,avg);
-		
+			
 		
 		
 		
