@@ -29,7 +29,7 @@ public class RussianRoulette {
 		if(playerNum < 2 || playerNum > 4) {
 			System.out.println("게임 인원이 올바르지 않습니다. 게임을 종료합니다.");
 			sc.close();
-			return; //main 함수 종료.
+			return; //main 함수 종료. 
 		}
 		
 		//플레이어 이름 등록하고
@@ -71,7 +71,7 @@ public class RussianRoulette {
 			}
 		} //총알 배치 끝.
 		
-
+		
 		//실행 순서 정하기
 		//난수를 이용해서 실행 순서를 정합니다.
 		//시작 인덱스를 난수로 정해서 돌아가게 하셔도 되고

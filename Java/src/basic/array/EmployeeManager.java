@@ -5,16 +5,17 @@ import java.util.Scanner;
 public class EmployeeManager {
 
 	public static void main(String[] args) {
-
-
-
+		
+		
+		
 		Scanner sc = new Scanner(System.in);
 		//사원의 정보: 사번, 이름, 나이, 부서명
 		String[] userNums = new String[100];
 		String[] names = new String[100];
 		int[] ages = new int[100];
 		String[] departments = new String[100];
-
+		
+		
 		//실제로 입력된 데이터(사원의 정보)의 개수를 체크하는 변수.
 		int count = 0;
 
@@ -205,7 +206,7 @@ public class EmployeeManager {
 						flag = true;
 						break;
 					}
-				}
+				} 
 				if(!flag) {
 					System.out.println("# 조회하신 사원정보는 존재하지 않습니다.");
 				}
@@ -220,7 +221,7 @@ public class EmployeeManager {
 				System.out.println("메뉴를 잘못 입력하셨습니다.");
 			}
 
-
+			
 
 		} // end while true
 
