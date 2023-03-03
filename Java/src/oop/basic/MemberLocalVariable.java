@@ -1,4 +1,9 @@
 package oop.basic;
+
+import java.lang.reflect.Member;
+
+import javax.print.attribute.standard.PrinterName;
+
 /*
 		 # 멤버 변수(field, class member variable)
 		 1. 클래스 블록에 선언된 변수를 의미합니다.
@@ -17,12 +22,28 @@ package oop.basic;
 
 public class MemberLocalVariable {
 
+	int a;  //맴버 변수
+	
+	void printNumber(int c) { //매개 변수
+		int b = 1; //지역 변수
+		System.out.println("멤버변수 a:"+ a);
+		System.out.println("멤버변수 b:"+ b);
+		System.out.println("멤버변수 c:"+ c);
+		
+		
+	}
+	
+	
+	
+	
 	public static void main(String[] args) {
 
+		MemberLocalVariable m =new MemberLocalVariable();
+		m.printNumber(4);
 		
 		
-		
-		
+
+
 		
 		
 		
