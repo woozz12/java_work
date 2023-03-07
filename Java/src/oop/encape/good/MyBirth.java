@@ -51,8 +51,7 @@ public class MyBirth {
 	 */
 	
 	public int getyear(String pw){
-		if(pw.equals("abc1234")) {
-			
+		if(pw.equals("abc1234")) {	
 			return this.year;
 		}else {
 			System.out.println("비밀번호가 틀렸습니다.");
