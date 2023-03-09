@@ -19,6 +19,17 @@ public class MainClass {
         */
 		
 		
+		Shape r  =new Rect("정사각형",5);
+		
+		System.out.println(r.getName());
+		System.out.println("넓이: "+r.getArea());
+		
+		System.out.println("-----------------------");
+		
+		Shape c = new Circle("원", 4);
+		System.out.println(c.getName());
+		System.out.println("넓이: " + c.getArea());
+		
 	}
 
 }
