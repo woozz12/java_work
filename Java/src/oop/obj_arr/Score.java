@@ -1,109 +1,89 @@
 package oop.obj_arr;
 
-
 public class Score {
-
-
+	
 	/*
-    - 이름, 국어, 영어, 수학, 총점, 평균(double)을
-     담을 수 있는 객체를 디자인하세요.
-
-    - 학생의 모든 정보를 한 눈에 확인할 수 있게
-     scoreInfo() 메서드를 선언해 주세요.
-     메서드 내부에는 출력문을 이용해서 모든 정보를 출력해 주세요.
-
-    - 캡슐화를 구현해서 작성해 주세요. (생성자는 맘대로 하세요.)
-	 */
-
-
+	 - 이름, 국어, 영어, 수학, 총점, 평균(double)을
+	  담을 수 있는 객체를 디자인하세요.
+	  
+	 - 학생의 모든 정보를 한 눈에 확인할 수 있게
+	  scoreInfo() 메서드를 선언해 주세요.
+	  메서드 내부에는 출력문을 이용해서 모든 정보를 출력해 주세요.
+	  
+	 - 캡슐화를 구현해서 작성해 주세요. (생성자는 맘대로 하세요.)
+	*/
+	
 	private String name;
-	private int i;
-	private int j;
-	private int k;
-	private double avg;
+	private int kor;
+	private int eng;
+	private int math;
+	private int total;
+	private double average;
 	
 	public Score() {}
 	
-	
-	public Score(String name, int i, int j, int k, double avg) {
+	public Score(String name, int kor, int eng, int math) {
 		super();
 		this.name = name;
-		this.i = i;
-		this.j = j;
-		this.k = k;
-		this.avg = avg;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		this.total = kor + eng + math;
+		this.average = this.total / 3.0;
 	}
-
 
 	public String getName() {
 		return name;
 	}
-
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
-
-	public int getI() {
-		return i;
+	public int getKor() {
+		return kor;
 	}
-
-	public void setI(int i) {
-		this.i = i;
+	public void setKor(int kor) {
+		this.kor = kor;
 	}
-
-	public int getJ() {
-		return j;
+	public int getEng() {
+		return eng;
 	}
-
-	public void setJ(int j) {
-		this.j = j;
+	public void setEng(int eng) {
+		this.eng = eng;
 	}
-
-
-	public int getK() {
-		return k;
+	public int getMath() {
+		return math;
 	}
-
-
-	public void setK(int k) {
-		this.k = k;
+	public void setMath(int math) {
+		this.math = math;
 	}
-
-
-	public double getAvg() {
-		return avg;
+	public int getTotal() {
+		return total;
 	}
-
-
-	public void setAvg(double avg) {
-		this.avg = avg;
+	public void setTotal(int total) {
+		this.total = total;
 	}
-
-
-	public void scoreInfo() {
-		System.out.printf("평균: %d + %d + %d/3=%.1f\n"
-				,this.i,this.j,this.k,this.avg);
+	public double getAverage() {
+		return average;
+	}
+	public void setAverage(double average) {
+		this.average = average;
 	}
 	
-
-
-
-
-
-
-	//	51*[]7 =42
-
-
-
-
-
-
-
-
-
-
-
+	public void scoreInfo() {
+		System.out.printf("이름: %s 국어: %d점 영어: %d점 수학: %d점\n총점: %d점  평균: %.2f점\n"
+				, name, kor, eng, math, total, average);
+	}
+	
+	
+	
 
 }
+
+
+
+
+
+
+
+
+
