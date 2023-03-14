@@ -14,7 +14,7 @@ public class LottoSimulator {
 	static int prize5 = 0; //5등 담청 횟수를 세 줄 변수
 	static int failcnt = 0; //꽝 담청 횟수를 세 줄 변수
 	
-	public static ??? creatLotto(){
+//	public static ??? creatLotto(){
 		
 		/*
 		 - 1~ 45 범위의 난수 6개를 생성하셔서
@@ -23,10 +23,10 @@ public class LottoSimulator {
 		  중복이 발생하면 안됩니다.
 		 */
 		 
-	}
+//	}
 	
 	//보너스 번호를 생성하는 메서드
-	public static int createBonusNum(???) {
+//	public static int createBonusNum(???) {
 		
 		/*
 		 - 매개값으로 전달되는 당첨 번호 집합을 전달 받으신 후
@@ -34,10 +34,10 @@ public class LottoSimulator {
 		  범위는 마찬가지로 1 ~ 45 사이의 난수입니다.
 		 */
 		
-	}
+//	}
 	
 	//당첨 등수를 알려주는 메서드
-	public static void checkLottoNumber(???,???,???) {
+//	public static void checkLottoNumber(???,???,???) {
 		
 		/*
 		 매개값으로 당첨번호집합, 구매한 로또 번호집합, 보너스번호를 받습니다.
@@ -52,7 +52,7 @@ public class LottoSimulator {
 		 */
 		
 		
-	}
+//	}
 	
 	public static void main(String[] args) {
 		
@@ -74,8 +74,8 @@ public class LottoSimulator {
 		
 			
 		
-		//1등 당첨자
-		System.out.println("1등 당첨: " + Collections.frequency(prize1, 1));
+//		//1등 당첨자
+//		System.out.println("1등 당첨: " + Collections.frequency(prize1, 1));
 		
 		
 		

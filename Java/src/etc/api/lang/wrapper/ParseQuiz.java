@@ -22,7 +22,7 @@ public class ParseQuiz {
 			}
 			c = ssr.charAt(7);
 			if(!(c == '1' || c== '2'|| c =='3'|| c=='4')) {  
-				System.out.println("주민등록번호 뒷자리 첫번째느 1,2,3,4 중 하나를 받아야한다");
+				System.out.println("주민등록번호 뒷자리 첫번째는 1,2,3,4 중 하나를 받아야한다");
 				continue;
 			}
 			try {
